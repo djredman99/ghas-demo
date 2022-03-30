@@ -25,3 +25,9 @@ https://docs.github.com/en/free-pro-team@latest/github/finding-security-vulnerab
 - [GraphQL API](https://docs.github.com/en/free-pro-team@latest/graphql)
   - [RepositoryVulnerabilityAlert](https://docs.github.com/en/free-pro-team@latest/graphql/reference/objects#repositoryvulnerabilityalert)
 - [REST API](https://docs.github.com/en/free-pro-team@latest/rest)
+
+
+## Why do we compile for Code QL Scanns?
+In brief, because we want to know which source code is relevant to analyse, and we want to resolve inter-file references in your code: references to other user code, and to third-party code. Without a build we can guess at that, but most languages’ compilers need to know exactly that information to compile your code, so following along with your build to find out what user code is relevant (i.e., which source files get compiled) and how search paths and such get configured so the compiler can find other user code and library code is an ergonomic way for us to discover that contextual information without your having to describe it to us in some proprietary format.
+
+It also allows us to scan temporary files that are generated at build time (even if they're subsequently deleted), including multiple versions of the same file. (edited) 
