@@ -32,3 +32,6 @@ In brief, because we want to know which source code is relevant to analyse, and 
 
 It also allows us to scan temporary files that are generated at build time (even if they're subsequently deleted), including multiple versions of the same file. (edited) 
 
+## Accessing GitHub Advisory Database
+[GitHub Advisories](https://github.com/advisories)
+
