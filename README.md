@@ -35,3 +35,4 @@ It also allows us to scan temporary files that are generated at build time (even
 ## Accessing GitHub Advisory Database
 [GitHub Advisories](https://github.com/advisories)
 
+added
